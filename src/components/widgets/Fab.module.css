@@ -1,0 +1,16 @@
+.fab {
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: var(--inverse-surface);
+  color: var(--on-inverse-surface);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 250ms;
+
+  &:active {
+    scale: 0.9;
+  }
+}

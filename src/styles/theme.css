@@ -1,0 +1,51 @@
+* {
+    /* Scheme */
+    &[data-theme="auto"] { color-scheme: light dark }
+    &[data-theme="light"] { color-scheme: light }
+    &[data-theme="dark"] { color-scheme: dark }
+
+    /* Light */
+    --primary-light:              hsl(210 70% 40%  / 1);
+    --on-primary-light:           hsl(210 70% 100% / 1);
+    --primary-container-light:    hsl(210 70% 80%  / 1);
+    --on-primary-container-light: hsl(210 70% 20% / 1);
+    --surface-lowest-light:       hsl(0   0%  98%  / 1);
+    --surface-low-light:          hsl(0   0%  94%  / 1);
+    --surface-light:              hsl(0   0%  90%  / 1);
+    --surface-high-light:         hsl(0   0%  86%  / 1);
+    --surface-highest-light:      hsl(0   0%  84%  / 1);
+    --inverse-surface-light:      hsl(0   0%  10%  / 1);
+    --on-surface-light:           hsl(0   0%  10%  / 1);
+    --on-inverse-surface-light:   hsl(0   0%  90%  / 1);
+    --shadow-light:               hsl(0   0%  0%   / 0.2);
+    
+    /* Dark */
+    --primary-dark:              hsl(210 70% 70% / 1);
+    --on-primary-dark:           hsl(210 70% 15% / 1);
+    --primary-container-dark:    hsl(210 70% 20% / 1);
+    --on-primary-container-dark: hsl(210 70% 95% / 1);
+    --surface-lowest-dark:       hsl(0   0%  2%  / 1);
+    --surface-low-dark:          hsl(0   0%  6%  / 1);
+    --surface-dark:              hsl(0   0%  10% / 1);
+    --surface-high-dark:         hsl(0   0%  14% / 1);
+    --surface-highest-dark:      hsl(0   0%  18% / 1);
+    --inverse-surface-dark:      hsl(0   0%  90% / 1);
+    --on-surface-dark:           hsl(0   0%  90% / 1);
+    --on-inverse-surface-dark:   hsl(0   0%  10% / 1);
+    --shadow-dark:               hsl(0   0%  0%  / 0.2);
+    
+    /* Auto */
+    --primary:              light-dark(var(--primary-light),              var(--primary-dark));
+    --on-primary:           light-dark(var(--on-primary-light),           var(--on-primary-dark));
+    --primary-container:    light-dark(var(--primary-container-light),    var(--primary-container-dark));
+    --on-primary-container: light-dark(var(--on-primary-container-light), var(--on-primary-container-dark));
+    --surface-lowest:       light-dark(var(--surface-lowest-light),       var(--surface-lowest-dark));
+    --surface-low:          light-dark(var(--surface-low-light),          var(--surface-low-dark));
+    --surface:              light-dark(var(--surface-light),              var(--surface-dark));
+    --surface-high:         light-dark(var(--surface-high-light),         var(--surface-high-dark));
+    --surface-highest:      light-dark(var(--surface-highest-light),      var(--surface-highest-dark));
+    --inverse-surface:      light-dark(var(--inverse-surface-light),      var(--inverse-surface-dark));
+    --on-surface:           light-dark(var(--on-surface-light),           var(--on-surface-dark));
+    --on-inverse-surface:   light-dark(var(--on-inverse-surface-light),   var(--on-inverse-surface-dark));
+    --shadow:               light-dark(var(--shadow-light),               var(--shadow-dark));
+}

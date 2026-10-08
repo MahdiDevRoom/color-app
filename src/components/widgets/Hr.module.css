@@ -1,0 +1,7 @@
+.hr {
+  display: block;
+  width: 100%;
+  height: 0;
+  border-bottom: 2px solid var(--surface-high);
+  border-radius: 2px;
+}

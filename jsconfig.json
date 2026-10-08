@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@css/*": ["./src/styles/*"],
+      "@views/*": ["./src/views/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@stores/*": ["./src/stores/*"],
+      "@router/*": ["./src/router/*"],
+      "@layouts/*": ["./src/components/layouts/*"],
+      "@widgets/*": ["./src/components/widgets/*"],
+    }
+  },
+  "include": ["src"]
+}

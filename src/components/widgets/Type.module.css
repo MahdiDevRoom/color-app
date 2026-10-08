@@ -1,0 +1,165 @@
+.type {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  text-decoration: none;
+  color: inherit;
+
+  --brand: var(--font-brand, serif);
+  --plain: var(--font-base, sans-serif);
+
+  --size: var(--font-size, 16px);
+  --weight: var(--font-weight, 400);
+  --height: var(--line-height, 24px);
+
+  &.display-large {
+    font-family: var(--brand);
+    font-size: calc(var(--size) + 41px);
+    line-height: calc(var(--height) + 40px);
+    font-weight: var(--weight);
+    letter-spacing: -0.25px;
+  }
+
+  &.display-medium,
+  &.display {
+    font-family: var(--brand);
+    font-size: calc(var(--size) + 29px);
+    line-height: calc(var(--height) + 28px);
+    font-weight: var(--weight);
+    letter-spacing: 0;
+  }
+
+  &.display-small {
+    font-family: var(--brand);
+    font-size: calc(var(--size) + 20px);
+    line-height: calc(var(--height) + 20px);
+    font-weight: var(--weight);
+    letter-spacing: 0;
+  }
+
+  &.headline-large {
+    font-family: var(--brand);
+    font-size: calc(var(--size) + 16px);
+    line-height: calc(var(--height) + 16px);
+    font-weight: var(--weight);
+    letter-spacing: 0;
+  }
+
+  &.headline-medium,
+  &.headline {
+    font-family: var(--brand);
+    font-size: calc(var(--size) + 12px);
+    line-height: calc(var(--height) + 12px);
+    font-weight: var(--weight);
+    letter-spacing: 0;
+  }
+
+  &.headline-small {
+    font-family: var(--brand);
+    font-size: calc(var(--size) + 8px);
+    line-height: calc(var(--height) + 8px);
+    font-weight: var(--weight);
+    letter-spacing: 0;
+  }
+
+  &.title-large {
+    font-family: var(--brand);
+    font-size: calc(var(--size) + 6px);
+    line-height: calc(var(--height) + 4px);
+    font-weight: var(--weight);
+    letter-spacing: 0;
+  }
+
+  &.title-medium,
+  &.title {
+    font-family: var(--plain);
+    font-size: var(--size);
+    line-height: var(--height);
+    font-weight: calc(var(--weight) + 100);
+    letter-spacing: 0.15px;
+  }
+
+  &.title-small {
+    font-family: var(--plain);
+    font-size: calc(var(--size) - 2px);
+    line-height: calc(var(--height) - 4px);
+    font-weight: calc(var(--weight) + 100);
+    letter-spacing: 0.1px;
+  }
+
+  &.body-large {
+    font-family: var(--plain);
+    font-size: var(--size);
+    line-height: var(--height);
+    font-weight: var(--weight);
+    letter-spacing: 0.5px;
+  }
+
+  &.body-medium,
+  &.body {
+    font-family: var(--plain);
+    font-size: calc(var(--size) - 2px);
+    line-height: calc(var(--height) - 4px);
+    font-weight: var(--weight);
+    letter-spacing: 0.25px;
+  }
+
+  &.body-small {
+    font-family: var(--plain);
+    font-size: calc(var(--size) - 4px);
+    line-height: calc(var(--height) - 8px);
+    font-weight: var(--weight);
+    letter-spacing: 0.4px;
+  }
+
+  &.label-large {
+    font-family: var(--plain);
+    font-size: calc(var(--size) - 2px);
+    line-height: calc(var(--height) - 4px);
+    font-weight: calc(var(--weight) + 100);
+    letter-spacing: 0.1px;
+  }
+
+  &.label-medium,
+  &.label {
+    font-family: var(--plain);
+    font-size: calc(var(--size) - 4px);
+    line-height: calc(var(--height) - 8px);
+    font-weight: calc(var(--weight) + 100);
+    letter-spacing: 0.5px;
+  }
+
+  &.label-small {
+    font-family: var(--plain);
+    font-size: calc(var(--size) - 5px);
+    line-height: calc(var(--height) - 8px);
+    font-weight: calc(var(--weight) + 100);
+    letter-spacing: 0.5px;
+  }
+
+  &.display-large:global(.emphasized),
+  &.display-medium:global(.emphasized),
+  &.display:global(.emphasized),
+  &.display-small:global(.emphasized),
+  &.headline-large:global(.emphasized),
+  &.headline-medium:global(.emphasized),
+  &.headline:global(.emphasized),
+  &.headline-small:global(.emphasized) {
+    font-weight: calc(var(--weight) + 300);
+  }
+
+  &.title-large:global(.emphasized),
+  &.title-medium:global(.emphasized),
+  &.title:global(.emphasized),
+  &.title-small:global(.emphasized),
+  &.body-large:global(.emphasized),
+  &.body-medium:global(.emphasized),
+  &.body:global(.emphasized),
+  &.body-small:global(.emphasized),
+  &.label-large:global(.emphasized),
+  &.label-medium:global(.emphasized),
+  &.label:global(.emphasized),
+  &.label-small:global(.emphasized) {
+    font-weight: calc(var(--weight) + 100);
+  }
+}

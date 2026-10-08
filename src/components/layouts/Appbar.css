@@ -1,0 +1,60 @@
+#appbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(var(--surface), transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+
+  .foreground {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: 64px;
+    border-radius: 32px;
+    background: var(--surface-low);
+    overflow: hidden;
+
+    .title {
+      flex: 1;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding-inline: 16px;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .end {
+      display: flex;
+      align-items: stretch;
+      justify-content: start;
+      padding: 4px;
+      gap: 4px;
+
+      .btn {
+        aspect-ratio: 1;
+        outline: none;
+        border: none;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 28px;
+        transition: 250ms;
+
+        &:hover { background: var(--surface) }
+
+        &:active {
+          scale: 0.9;
+        }
+      }
+    }
+  }
+}

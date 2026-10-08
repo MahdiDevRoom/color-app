@@ -1,0 +1,20 @@
+#view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--surface);
+  color: var(--on-surface);
+  overflow: hidden;
+  z-index: 0;
+  transition: 250ms;
+
+  &.push {
+    scale: 0.95;
+    translate: 250px 0;
+    border-radius: 36px;
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}

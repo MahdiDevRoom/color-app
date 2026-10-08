@@ -1,0 +1,144 @@
+[data-shape] {
+  --shape-mask: none;
+  mask: var(--shape-mask) no-repeat center / contain;
+}
+
+[data-shape="arch"] {
+  --shape-mask: url("/shapes/Arch.svg");
+}
+
+[data-shape="arrow"] {
+  --shape-mask: url("/shapes/Arrow.svg");
+}
+
+[data-shape="boom"] {
+  --shape-mask: url("/shapes/Boom.svg");
+}
+
+[data-shape="bun"] {
+  --shape-mask: url("/shapes/Bun.svg");
+}
+
+[data-shape="burst"] {
+  --shape-mask: url("/shapes/Burst.svg");
+}
+
+[data-shape="circle"] {
+  --shape-mask: url("/shapes/Circle.svg");
+}
+
+[data-shape="clam-shell"] {
+  --shape-mask: url("/shapes/ClamShell.svg");
+}
+
+[data-shape="clover-4-leaf"] {
+  --shape-mask: url("/shapes/Clover4Leaf.svg");
+}
+
+[data-shape="clover-8-leaf"] {
+  --shape-mask: url("/shapes/Clover8Leaf.svg");
+}
+
+[data-shape="cookie-12-sided"] {
+  --shape-mask: url("/shapes/Cookie12Sided.svg");
+}
+
+[data-shape="cookie-4-sided"] {
+  --shape-mask: url("/shapes/Cookie4Sided.svg");
+}
+
+[data-shape="cookie-6-sided"] {
+  --shape-mask: url("/shapes/Cookie6Sided.svg");
+}
+
+[data-shape="cookie-7-sided"] {
+  --shape-mask: url("/shapes/Cookie7Sided.svg");
+}
+
+[data-shape="cookie-9-sided"] {
+  --shape-mask: url("/shapes/Cookie9Sided.svg");
+}
+
+[data-shape="diamond"] {
+  --shape-mask: url("/shapes/Diamond.svg");
+}
+
+[data-shape="fan"] {
+  --shape-mask: url("/shapes/Fan.svg");
+}
+
+[data-shape="flower"] {
+  --shape-mask: url("/shapes/Flower.svg");
+}
+
+[data-shape="gem"] {
+  --shape-mask: url("/shapes/Gem.svg");
+}
+
+[data-shape="ghostish"] {
+  --shape-mask: url("/shapes/Ghostish.svg");
+}
+
+[data-shape="heart"] {
+  --shape-mask: url("/shapes/Heart.svg");
+}
+
+[data-shape="oval"] {
+  --shape-mask: url("/shapes/Oval.svg");
+}
+
+[data-shape="pentagon"] {
+  --shape-mask: url("/shapes/Pentagon.svg");
+}
+
+[data-shape="pill"] {
+  --shape-mask: url("/shapes/Pill.svg");
+}
+
+[data-shape="pixel-circle"] {
+  --shape-mask: url("/shapes/PixelCircle.svg");
+}
+
+[data-shape="pixel-triangle"] {
+  --shape-mask: url("/shapes/PixelTriangle.svg");
+}
+
+[data-shape="puffy"] {
+  --shape-mask: url("/shapes/Puffy.svg");
+}
+
+[data-shape="puffy-diamond"] {
+  --shape-mask: url("/shapes/PuffyDiamond.svg");
+}
+
+[data-shape="semi-circle"] {
+  --shape-mask: url("/shapes/SemiCircle.svg");
+}
+
+[data-shape="slanted"] {
+  --shape-mask: url("/shapes/Slanted.svg");
+}
+
+[data-shape="soft-boom"] {
+  --shape-mask: url("/shapes/SoftBoom.svg");
+}
+
+[data-shape="soft-burst"] {
+  --shape-mask: url("/shapes/SoftBurst.svg");
+}
+
+[data-shape="square"] {
+  --shape-mask: url("/shapes/Square.svg");
+}
+
+[data-shape="sunny"] {
+  --shape-mask: url("/shapes/Sunny.svg");
+}
+
+[data-shape="triangle"] {
+  --shape-mask: url("/shapes/Triangle.svg");
+}
+
+[data-shape="very-sunny"] {
+  --shape-mask: url("/shapes/VerySunny.svg");
+}
