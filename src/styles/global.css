@@ -66,5 +66,12 @@ body {
   width: 100%;
   height: 100%;
   background: var(--surface-low);
-  color: var(--on-surface-low);
+  color: var(--on-surface);
+}
+
+/* --- Desk --------------------------------------- */
+@media (min-width: 670px) {
+  #app {
+    background: var(--surface);
+  }
 }

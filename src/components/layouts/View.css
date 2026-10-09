@@ -6,6 +6,7 @@
   height: 100%;
   background: var(--surface);
   color: var(--on-surface);
+  border-left: 2px solid transparent;
   overflow: hidden;
   z-index: 0;
   transition: 250ms;
@@ -16,5 +17,20 @@
     border-radius: 36px;
     cursor: pointer;
     opacity: 0.5;
+  }
+}
+
+@media (min-width: 670px) {
+  #view {
+    &.push {
+      left: 250px;
+      width: calc(100% - 250px);
+      translate: 0;
+      opacity: 1;
+      scale: 1;
+      border-radius: 0;
+      cursor: auto;
+      border-left: 2px solid var(--surface-high);
+    }
   }
 }

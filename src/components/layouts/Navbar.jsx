@@ -32,7 +32,7 @@ const navs = {
 function Action({ view }) {
   if (view !== 'lab') return null;
   return (
-    <Fab data-shape="sunny">
+    <Fab>
       <PaletteIcon weight="Filled" />
     </Fab>
   )

@@ -55,3 +55,22 @@
   }
 
 }
+
+@media (min-width: 670px) {
+  #navbar {
+    top: 0;
+    right: 0;
+    left: unset;
+    bottom: unset;
+    background: none;
+    width: auto;
+
+    .foreground {
+      display: flex;
+    }
+
+    .fab {
+      background: #000;
+    }
+  }
+}

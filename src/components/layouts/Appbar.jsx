@@ -5,8 +5,9 @@ import './Appbar.css';
 export default function Appbar() {
   const title = useUIStore((s) => s.title);
   const open = useUIStore((s) => s.openPanel);
+  const isOpen = useUIStore((s) => s.isPanelOpen);
   return (
-    <div id="appbar">
+    <div id="appbar" className={isOpen ? "active" : ""}>
       <div className="foreground">
         <div className="title"> {title} </div>
         <div className="end">

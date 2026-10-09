@@ -19,7 +19,7 @@
     align-items: stretch;
     height: 64px;
     padding: 8px;
-    border-bottom: 2px solid var(--surface);
+    border-bottom: 2px solid var(--surface-high);
 
     .title {
       flex: 1;
@@ -68,10 +68,11 @@
       padding: 8px;
       gap: 8px;
       border-radius: 16px;
+      border-left: 0 solid transparent;
       transition: 250ms;
 
       &:hover {
-        background: var(--surface);
+        background: var(--surface-high);
       }
 
       &:active {
@@ -96,6 +97,7 @@
 
       &.active {
         background: var(--surface-highest);
+        border-left: 16px solid var(--inverse-surface);
       }
     }
   }

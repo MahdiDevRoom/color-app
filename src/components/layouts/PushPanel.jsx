@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@hooks/useMediaQuery';
 import { useUIStore } from '@stores/useUIStore';
 import { NavLink } from 'react-router-dom';
 import './PushPanel.css';
@@ -27,6 +28,9 @@ export default function PushPanel({ active }) {
     { to: '/about', Icon: IconAbout, label: 'About' },
   ]
 
+  const isDesktop = useMediaQuery("(min-width: 670px)");
+
+  const handleClick = () => { if (!isDesktop) close() };
 
   return (
     <div id="push-panel" className={active ? "active" : ""}>
@@ -40,7 +44,7 @@ export default function PushPanel({ active }) {
             key={to}
             to={to}
             end={end}
-            onClick={close}
+            onClick={handleClick}
             className={({ isActive }) => isActive ? "active nav" : "nav"}>
             {({ isActive }) => (
               <>

@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 56px;
   background: var(--inverse-surface);
   color: var(--on-inverse-surface);
   border-radius: 16px;
